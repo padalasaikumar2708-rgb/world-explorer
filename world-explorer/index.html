@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>World Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>World Explorer</h1>
+    <div class="controls">
+      <input id="search" placeholder="Search places or countries..." />
+      <select id="countryFilter">
+        <option value="">All countries</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery"></section>
+  </main>
+
+  <!-- Modal for details -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <img id="modalImg" alt="" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p><strong>Country:</strong> <span id="modalCountry"></span></p>
+      <a id="mapLink" target="_blank" rel="noopener">Open in Google Maps</a>
+      <button id="favBtn">Add to favorites</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <small>Built with HTML, CSS, JS — demo</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
